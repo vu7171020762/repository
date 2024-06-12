@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - VN CLO</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="trangchu.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="trangchu.js"></script>
+    <style>
+        /* Thêm CSS cho biểu tượng đăng nhập và giỏ hàng */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            display: inline-block;
+            padding: 10px;
+            color: white; /* Chuyển màu biểu tượng thành màu trắng */
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .icon:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tragchu.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="sanpham.html">Khuyến mãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="icon-container">
+                <a href="DN.html" class="icon"><i class="fas fa-user"></i></a> <!-- Biểu tượng đăng nhập -->
+                <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a> <!-- Biểu tượng giỏ hàng -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_4_img.jpg?v=372" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_2_img.jpg?v=372" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="https://theme.hstatic.net/200000690725/1001078549/14/slide_3_img.jpg?v=372" alt="Slide 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <section id="home">
+        <h1>Chào mừng đến với VN CLO</h1>
+        <p>Chúng tôi cung cấp các sản phẩm.</p>
+    </section>
+
+    <section id="featured-categories">
+        <h2>Danh mục nổi bật</h2>
+        <div class="categories">
+            <div class="category">
+                <a href="sanpham2.html">
+                    <img src="https://im.uniqlo.com/global-cms/spa/res421e4d44da82b93b6edf153049a9dd30fr.jpg" alt="">
+                    <h3></h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="sp3.html">
+                    <img src="https://im.uniqlo.com/global-cms/spa/res98aee081614aa1237677c10182d1fb73fr.jpg" alt="">
+                    <h3></h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="sanpham1.html">
+                    <img src="https://im.uniqlo.com/global-cms/spa/res8a23a34445c7b2f85743665a5876d0f5fr.jpg" alt="">
+                    <h3></h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="sp4.html">
+                    <img src="https://im.uniqlo.com/global-cms/spa/res0f5e1d5f67046e5e54eaaa35caab613ffr.jpg" alt="">
+                    <h3></h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-arrivals">
+        <h2>Hàng mới về</h2>
+        <div class="new-products">
+            <div class="product">
+                <a href="sanpham1.html">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/450195/item/vngoods_01_450195.jpg?width=750" alt="Product 1" class="default-img">
+                    <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/450195/item/goods_06_450195.jpg?width=750" alt="Product 1 Hover" class="hover-img">
+                    <h3>Áo Khoác Giả Lông Cừu Kéo Khóa Dài Tay</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="sanpham2.html">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_18_467515.jpg?width=750" alt="Product 2" class="default-img">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/sub/vngoods_467515_sub3.jpg?width=750" alt="Product 2 Hover" class="hover-img">
+                    <h3>AIRism Cotton Áo Polo Gài Nút Ngắn Tay (Open Collar)</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="sp3.html">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/465185/sub/vngoods_465185_sub1.jpg?width=750" alt="Product 3" class="default-img">
+                    <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/465185/sub/goods_465185_sub14.jpg?width=750" alt="Product 3 Hover" class="hover-img">
+                    <h3>Áo Thun Supima Cotton Cổ Tròn Ngắn Tay</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="sp4.html">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/468841/item/vngoods_05_468841.jpg?width=750" alt="Product 4" class="default-img">
+                    <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/468841/sub/goods_468841_sub14.jpg?width=750" alt="Product 4 Hover" class="hover-img">
+                    <h3>Quần Jeans Dáng Suông Rộng</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 VN CLO. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                              prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
+

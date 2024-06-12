@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Uniqlo</title>
+    <link rel="stylesheet" href="sp3.css">
+    <script src="sp2.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tragchu.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-images">
+                <img id="main-image" src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_18_467515.jpg?width=750" alt="Product Image">
+                <div class="thumbnail-images">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_18_467515.jpg?width=750" alt="Thumbnail 1" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_18_467515.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_00_467515.jpg?width=750" alt="Thumbnail 2" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_00_467515.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_09_467515.jpg?width=750" alt="Thumbnail 3" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_09_467515.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_41_467515.jpg?width=750" alt="Thumbnail 3" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_41_467515.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_56_467515.jpg?width=750" alt="Thumbnail 3" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_56_467515.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_69_467515.jpg?width=750" alt="Thumbnail 3" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_69_467515.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/sub/vngoods_467515_sub24.jpg?width=750" alt="Thumbnail 3" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/sub/vngoods_467515_sub24.jpg?width=750'); disableAutoSlide();">
+                    <img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/467515/sub/goods_467515_sub23.jpg?width=750" alt="Thumbnail 3" onclick="changeImage('https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/467515/sub/goods_467515_sub23.jpg?width=750'); disableAutoSlide();">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>AIRism Cotton Áo Thun Dáng Rộng Tay Lỡ</h1>
+                <p class="price">Giá: 500,000 VND</p>
+                <div class="color-selection">
+                    <label for="color">Màu sắc:</label>
+                    <div id="color-options">
+                        <div class="color-option" style="background-color: #f5f2f2;" onclick="selectColor('WHITE', 'https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_00_467515.jpg?width=750'); disableAutoSlide();"></div>
+                        <div class="color-option" style="background-color: #3c3838;" onclick="selectColor('BLACK', 'https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_09_467515.jpg?width=750'); disableAutoSlide();"></div>
+                        <div class="color-option" style="background-color: #7c3b3b;" onclick="selectColor('WINE', 'https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_18_467515.jpg?width=750'); disableAutoSlide();"></div>
+                        <div class="color-option" style="background-color: #f2f6bb;" onclick="selectColor('PURPLE', 'https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_41_467515.jpg?width=750'); disableAutoSlide();"></div>
+                        <div class="color-option" style="background-color: #769886;" onclick="selectColor('red', 'https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_56_467515.jpg?width=750'); disableAutoSlide();"></div>
+                        <div class="color-option" style="background-color: #0f2c55;" onclick="selectColor('red', 'https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/467515/item/vngoods_69_467515.jpg?width=750'); disableAutoSlide();"></div>
+                        
+
+</div>
+</div>
+<div class="size-selection">
+<label for="size">Kích thước:</label>
+<div id="size-options">
+<button onclick="selectSize('S')">S</button>
+<button onclick="selectSize('M')">M</button>
+<button onclick="selectSize('L')">L</button>
+<button onclick="selectSize('SL')" class="size-button">SL</button>
+<button onclick="selectSize('XL')" class="size-button">XL</button>
+<button onclick="selectSize('XXL')" class="size-button">XLL</button>
+</div>
+</div>
+<div class="quantity-selection">
+<label for="quantity">Số lượng:</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1">
+</div>
+<button class="add-to-cart">Thêm vào giỏ hàng</button>
+<button class="add-to-cart">Mua ngay</button>
+<div class="size-chart">
+<h2>Size Chart</h2>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Ngực (cm)</th>
+<th>Eo (cm)</th>
+<th>Hông (cm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>90-95</td>
+<td>80-85</td>
+<td>95-100</td>
+</tr>
+<tr>
+<td>M</td>
+<td>95-100</td>
+<td>85-90</td>
+<td>100-105</td>
+</tr>
+<tr>
+<td>L</td>
+<td>100-105</td>
+<td>90-95</td>
+<td>105-110</td>
+</tr>
+<tr>
+<td>L</td>
+<td>100-105</td>
+<td>90-95</td>
+<td>105-110</td>
+</tr>
+<tr>
+<td>XL</td>
+<td>110-115</td>
+<td>95-100</td>
+<td>110-115</td>
+</tr>
+<tr>
+<td>XLL</td>
+<td>115-120</td>
+<td>100-110</td>
+<td>115-120</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="product-description">
+<h2>Mô tả sản phẩm</h2>
+<p>Bộ sưu tập U từ thương hiệu Uniqlo là kết tinh sáng tạo của đội ngũ thiết kế quốc tế tận tâm và tài năng đến từ Trung tâm Nghiên cứu và Phát triển Paris, dưới sự dẫn dắt của Giám đốc Nghệ thuật Christophe Lemaire.</p>
+<p>- Chất liệu vải AIRism mịn màng, mang lại cảm giác thoáng mát như cotton.</p>
+<p>- Thiết kế cổ tròn thanh lịch, tạo điểm nhấn tinh tế.</p>
+<p>- Dáng vai rũ suông nhẹ cùng tay lỡ rộng rãi, giúp bạn có thể thoải mái với mọi hoạt động.</p>
+</div>
+</div>
+</section>
+</main>
+<div class="product-description">
+<!-- Nội dung mô tả sản phẩm -->
+</div>
+
+
+<div class="outfit-suggestion">
+    <h2>Gợi ý các phối đồ</h2>
+    <div class="outfit-thumbnails">
+        
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/240403083045_official_styling_130015210" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/24030403164_official_styling_130015034" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/240403083045_official_styling_130015210" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/24030403164_official_styling_130015034" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/240513064544_official_styling_130015323" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/240513064544_official_styling_130015325" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/24050202051_official_styling_130015287" alt="Outfit 3">
+        
+    </div>
+</div>
+<div class="outfit-suggestion">
+    <h2>Gợi ý phối đồ từ StyleHint</h2>
+       <p> Gợi ý phối đồ từ cộng đồng quốc tế </p>
+    <div class="outfit-thumbnails">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/vn/SR_IMAGES/ugc_stylehint_uq_vn_photo_240404_1308273_c-600-800" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/vn/SR_IMAGES/ugc_stylehint_uq_vn_photo_240518_1342968_c-600-800" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/vn/SR_IMAGES/ugc_stylehint_uq_vn_photo_240430_1328143_c-600-800" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/vn/SR_IMAGES/ugc_stylehint_uq_vn_photo_240604_1354563_c-600-800" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/sg/SR_IMAGES/ugc_stylehint_uq_sg_photo_240430_1325043_c-600-800" alt="Outfit 3">
+        <img src="https://api.fastretailing.com/ugc/v1/uq/jp/SR_IMAGES/ugc_stylehint_uq_jp_photo_240402_1305578_c-600-800" alt="Outfit 3">

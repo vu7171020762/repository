@@ -1,0 +1,110 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.product a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+
+.product .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.product:hover .default-img {
+    transform: scale(1.1);
+}
+
+.product:hover .hover-img {
+    opacity: 1;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product:hover .product-info {
+    opacity: 1;
+}
+
+.product-info h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+.product-info p {
+    margin: 5px 0 0;
+    color: #ddd;
+}
+/* Hiển thị giá sản phẩm từ đầu */
+.product-price {
+    display: block;
+}
+
+/* Ẩn giá sản phẩm khi hover vào sản phẩm */
+.product:hover .product-price {
+    display: none;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: 25%; /* Sản phẩm chiếm 1/4 chiều rộng của container */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của sản phẩm */
+    padding: 10px; /* Khoảng cách giữa các sản phẩm */
+}
+
+/* Các CSS khác cho sản phẩm */
